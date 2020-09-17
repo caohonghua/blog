@@ -226,7 +226,9 @@ public class BinarySearchTree {
 
 在这种遍历方法中，首先访问根节点，然后是左子树，最后是右子树。
 
-中序遍历图使用先序遍历输出结果为：A --> B --> D --> E --> C --> F --> G
+![bst-traverse](../images/datastruct/bst-traverse.png)
+
+该树的先序遍历输出为：A --> B --> D --> E --> C --> F --> G
 
 ### 算法
 
@@ -265,7 +267,9 @@ public class BinarySearchTree {
 
 在这种遍历方法中，根节点是最后访问的，首先先遍历左侧子树，然后是右侧子树，最后遍历根节点。
 
-中序遍历图使用后序遍历输出结果为：D --> E --> B --> F --> G --> C --> A
+![bst-traverse](../images/datastruct/bst-traverse.png)
+
+该树的后序遍历输出为：D --> E --> B --> F --> G --> C --> A
 
 ### 算法
 
