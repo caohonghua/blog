@@ -1,6 +1,6 @@
 layout: page
 title: "Contact-Us"
-permalink: /about/contact/
+permalink: /contact/
 
 
 ### Email: 1010590379@qq.com
