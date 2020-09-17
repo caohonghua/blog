@@ -1,3 +1,7 @@
+---
+permalink: /datastruct/heap/
+---
+
 # 堆
 
 堆是平衡二叉树数据结构的一种特殊情况，在该结构中，根节点密钥与其子节点进行比较并进行相应安排。如果a具有子节点b，则 keys(a) >=keys(b)。当parent的值大于child的值时，此属性将生成Max Heap（最大堆）。基于此标准，堆可以分为两种类型
@@ -8,15 +12,13 @@ For Input -> 35 33 42 10 14 19 27 44 26 31
 
 * **最小堆** - 根节点的值小于或等于其子节点中的一个。
 
-  ![截屏2020-09-16 下午3.23.48](/Users/caohonghua/文档/数据结构和算法/截屏2020-09-16 下午3.23.48.png)
+  ![min-heap](../images/datastruct/min-heap.png)
 
 * **最大堆** - 根节点的值大于或等于其任何子节点的值
 
-  ![截屏2020-09-16 下午3.26.29](/Users/caohonghua/文档/数据结构和算法/截屏2020-09-16 下午3.26.29.png)
+  ![max-heap](../images/datastruct/max-heap.png)
 
 两种树都是使用相同的输入和到达顺序构造的。
-
-
 
 ## 最大堆构造算法
 
@@ -36,11 +38,9 @@ Step 5 - Repeat step 3 & 4 util Heap property holds.
 
 让我们通过动画插图了解Max Heap的构造。我们考虑与之前使用相同的输入样本。
 
-![2020-09-16 15.44.04](/Users/caohonghua/文档/数据结构和算法/2020-09-16 15.44.04.gif)
+  ![max-heap-create](../images/datastruct/max-heap-create.gif)
 
 **注** - 上图不完整，但意思明确
-
-
 
 ## 最大堆删除算法
 
@@ -54,5 +54,5 @@ Step 4 - if value of parent is less than child, then swap them.
 Step 5 - Repeat step 3 & 4 util Heap property holds.
 ```
 
-![2020-09-16 15.57.38](/Users/caohonghua/文档/数据结构和算法/2020-09-16 15.57.38.gif)
+  ![max-heap-delete](../images/datastruct/max-heap-delete.gif)
 
