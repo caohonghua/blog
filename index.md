@@ -2,6 +2,6 @@
 
 ## 数据结构
 * [树](/blog/datastruct/tree/)
-* [堆](/blog/datastruct/deap/)
+* [堆](/blog/datastruct/heap/)
 
 ### [联系我们](/blog/contact/)
