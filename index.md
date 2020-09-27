@@ -8,5 +8,6 @@
 
 ## 算法
 * [排序算法](/blog/algorithm/sort/)
+* [搜索算法](/blog/algorithml/search/)
 
 ### [联系我们](/blog/contact/)
