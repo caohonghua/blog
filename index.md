@@ -10,4 +10,7 @@
 * [排序算法](/blog/algorithm/sort/)
 * [搜索算法](/blog/algorithm/search/)
 
+## Java
+* [泛型](/blog/java/generics/)
+
 ### [联系我们](/blog/contact/)
