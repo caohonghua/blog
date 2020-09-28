@@ -12,5 +12,6 @@
 
 ## Java
 * [泛型](/blog/java/generics/)
+* [Java 8 Stream API 实现集合交并差](/blog/java/stream/intersection-union-subtraction/)
 
 ### [联系我们](/blog/contact/)
