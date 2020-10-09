@@ -8,14 +8,14 @@ permalink: /java/design-pattern/factory/
 在Factory模式中，我们在不向客户端公开创建逻辑的情况下创建对象，并使用公共接口引用新创建的对象。
 
 ### 示例
-1. 创建接口
+* 创建接口
 ```java
 public interface Shape {
     void draw();
 }
 ```
 
-2. 创建实现相同接口的具体类
+* 创建实现相同接口的具体类
 
 ```java
 public class Rectangle implements Shape {
@@ -40,7 +40,7 @@ public class Circle implements Shape {
 }
 ```
 
-3. 创建工厂类，根据特定信息生成特定类
+* 创建工厂类，根据特定信息生成特定类
 
 ```java
 public class ShapeFactory {
@@ -62,7 +62,7 @@ public class ShapeFactory {
 }
 ```
 
-4. 使用示例
+* 使用示例
 
 ```java
 public class ShapeFactoryDemo {
