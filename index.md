@@ -18,6 +18,5 @@
 ## 设计模式
 * [单例模式](/blog/java/design-pattern/singleton/)
 * [工厂模式](/blog/java/design-pattern/factory/)
-</details>
 
 ### [联系我们](/blog/contact/)
