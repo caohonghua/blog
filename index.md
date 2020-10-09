@@ -11,7 +11,6 @@
 * [搜索算法](/blog/algorithm/search/)
 
 ## Java
-
 * [泛型](/blog/java/generics/)
 * [并发](/blog/java/concurrency/)
 * [Java 8 Stream API 实现集合交并差](/blog/java/stream/intersection-union-subtraction/)
