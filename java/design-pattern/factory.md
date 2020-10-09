@@ -16,7 +16,6 @@ public interface Shape {
 ```
 
 * 创建实现相同接口的具体类
-
 ```java
 public class Rectangle implements Shape {
     @Override
@@ -41,7 +40,6 @@ public class Circle implements Shape {
 ```
 
 * 创建工厂类，根据特定信息生成特定类
-
 ```java
 public class ShapeFactory {
     public Shape getShape(String shapeType){
@@ -63,7 +61,6 @@ public class ShapeFactory {
 ```
 
 * 使用示例
-
 ```java
 public class ShapeFactoryDemo {
     public static void main(String[] args){
