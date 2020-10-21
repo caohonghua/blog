@@ -9,6 +9,7 @@
 ## 算法
 * [排序算法](/blog/algorithm/sort/)
 * [搜索算法](/blog/algorithm/search/)
+* [KMP算法](/blog/algorithm/kmp/)
 
 ## Java
 * [泛型](/blog/java/generics/)
