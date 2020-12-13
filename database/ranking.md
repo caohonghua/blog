@@ -26,7 +26,7 @@ insert into score(name,chinese,math,english) values  ('小明',95,98,100), ('小
 ```
 
 ### 数据显示
-***
+
 | id | name   | chinese | math | english |
 |----|--------|---------|------|---------|
 |  1 | 小明   |      95 |   98 |     100 |
@@ -36,7 +36,8 @@ insert into score(name,chinese,math,english) values  ('小明',95,98,100), ('小
 |  5 | 小蓝   |      94 |  100 |      92 |
 |  6 | 小紫   |      90 |   99 |      90 |
 |  7 | 哆啦A梦    |      90 |   99 |     100 |
-***
+|----|--------|---------|------|---------|
+
 ### row_number()
 ```
 MySQL Version : 8.*
@@ -46,7 +47,7 @@ MySQL Version: 5.*
 select name,chinese, @rank:=@rank+1 ranking from score,(select @rank:=0 from dual) r order by chinese desc,name asc;
 ```
 ### 数据结果
-***
+
 | name       | chinese | ranking |
 |----|--------|---------|
 | 小明       |      95 |       1 |
@@ -56,7 +57,8 @@ select name,chinese, @rank:=@rank+1 ranking from score,(select @rank:=0 from dua
 | 小紫       |      90 |       5 |
 | 小红       |      90 |       6 |
 | 小林       |      88 |       7 |
-***
+
+
 
 ### rank()
 ```
@@ -69,7 +71,7 @@ select name,chinese,math,english,
 ```
 
 ### 数据结果
-***
+
 | name   | chinese | math | english | ranking|
 |--------|---------|------|---------|--------|
 | 小林       |      88 |   95 |      95 |       1 |
@@ -79,7 +81,7 @@ select name,chinese,math,english,
 | 小刚       |      90 |   95 |      90 |       4 |
 | 小蓝       |      94 |  100 |      92 |       1 |
 | 小明       |      95 |   98 |     100 |       1 |
-***
+
 
 ### dense_rank()
 ```
@@ -90,7 +92,7 @@ MySQL Version: 8.*
  select name ,chinese,math,english, if(@rank_chinese = chinese, if(@rank_math = math,@cur_rank,@cur_rank:=@cur_rank+1),@cur_rank:=1) ranking, @rank_chinese := chinese, @rank_math := math from score,(select @cur_rank:=0,@rank_chinese:=NULL,@rank_math:=NULL from dual) r order by chinese, math desc;
 ```
 ### 数据结果
-***
+
 | name   | chinese | math | english | ranking|
 |--------|---------|------|---------|--------|
 | 小林       |      88 |   95 |      95 |       1 |
@@ -100,4 +102,3 @@ MySQL Version: 8.*
 | 小刚       |      90 |   95 |      90 |       2 |
 | 小蓝       |      94 |  100 |      92 |       1 |
 | 小明       |      95 |   98 |     100 |       1 |
-***
