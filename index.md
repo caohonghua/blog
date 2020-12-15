@@ -19,7 +19,7 @@
 
 ## 数据库
 * [排名函数](/blog/database/ranking/)
-* [行转列](/bolg/database/rowtocolumn/)
+* [行转列](/blog/database/rowtocolumn/)
 
 ## 设计模式
 * [单例模式](/blog/java/design-pattern/singleton/)
