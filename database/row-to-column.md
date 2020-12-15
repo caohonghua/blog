@@ -36,16 +36,17 @@ insert into score(name,chinese,math,english) values  ('小明',95,98,100), ('小
 ### listagg()
 ```
 select chinese,listagg(name ',') within group(order by name) names from score; 
+
 ```
 
 ### group_concat()
 ```
 select chinese , group_concat(name order by name) names from score group by chinese;
+
 ```
 
-
 ### 结果显示
-|---------|----------------------|
+
 | chinese | names                |
 |---------|----------------------|
 |      88 | 小林                  |
